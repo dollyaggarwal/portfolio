@@ -55,8 +55,13 @@ const Skills = () => {
   </div>
 
    {/* image section */}
-   <div className="w-full flex items-center justify-center px-8">
-      <SkillCard/>
+   <div className="w-full flex flex-col gap-4 items-center justify-center px-8">
+      <SkillCard skill={"HTML 5"} percentage={"90%"} color={"#FF3F3F"} move={true}/>
+      <SkillCard skill={"CSS 3"} percentage={"72%"} color={"#008FFF"}/>
+      <SkillCard skill={"Javascript"} percentage={"80%"} color={"#FFB900"} move={true}/>
+      <SkillCard skill={"Node JS"} percentage={"75%"} color={"#14DB00"}/>
+      <SkillCard skill={"React JS"} percentage={"70%"} color={"#00FFF3"} move={true}/>
+      <SkillCard skill={"Mongo DB & Firebase"} percentage={"75%"} color={"#FFE400"}/>
   </div>
   </div>
   </section>
