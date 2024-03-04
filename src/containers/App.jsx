@@ -4,6 +4,8 @@ import Home from "./Home";
 import ServiceCount from "./ServiceCount";
 import About from "./About";
 import Skills from "./Skills";
+import Projects from "./Projects";
+import Contact from "./Contact";
 
 const App = () => {
   return (
@@ -20,7 +22,9 @@ const App = () => {
     {/* skills container */}
     <Skills/>
     {/* projects container */}
+    <Projects/>
     {/* contact container */}
+    <Contact/>
     {/* footer container */}
     </div>
   );
