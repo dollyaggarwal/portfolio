@@ -31,7 +31,7 @@ const Home = () => {
 					</h2>
 
 					<p className='text-base text-texlight mt-6 text-center lg:text-left'>
-					I am a skilled Full Stack Developer with expertise in Java, JavaScript, and a range of front-end and back-end technologies.
+					I am a skilled Full Stack Developer with expertise in <br/> Java, JavaScript, and a range of front-end and back-end technologies.
 					</p>
 
 					{/* social media links */}
