@@ -96,7 +96,7 @@ export const ProjectsData = [
     id: `portfolio-${Date.now()}`,
     name: "My Portfolio",
     imgSrc: Portfolio,
-    gitURL: "https://github.com/dollyaggarwal",
+    gitURL: "https://github.com/dollyaggarwal/portfolio",
   },
   {
     id: `mealsapp-${Date.now()}`,
