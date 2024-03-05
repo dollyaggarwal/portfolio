@@ -31,13 +31,7 @@ const Home = () => {
 					</h2>
 
 					<p className='text-base text-texlight mt-6 text-center lg:text-left'>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat. Duis aute irure dolor in
-						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-						culpa qui officia deserunt mollit anim id est laborum
+					I am a skilled Full Stack Developer with expertise in Java, JavaScript, and a range of front-end and back-end technologies.
 					</p>
 
 					{/* social media links */}
@@ -52,7 +46,9 @@ const Home = () => {
 
 					{/* hire me button */}
 					<a
-						href='#'
+					href='/assets/CV(full stack).pdf'
+						target='_blank' 
+						rel='noopener noreferrer'
 						style={{ boxShadow: 'inset 0px 0px 10px rgba(255,255,255,0.3)' }}
 						className='mt-12 border border-[rgba(255,255,255,0.3)] rounded-xl px-8 py-3 active:95 group hover:border-primary'>
 						<p className='text-texlight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-secondary'>

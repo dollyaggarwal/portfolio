@@ -11,14 +11,11 @@ import {
 import { SiLeetcode, SiCodingninjas } from "react-icons/si";
 import {
   ChatApp,
-  CodePenClone,
-  FreshJuiceUI,
-  ImageSharing,
-  OpenAI,
-  PixabayClone,
-  PortfolioFirebase,
-  RestaurantClone,
-  SocialMedia,
+  JobPortal,
+  Portfolio,
+  MealsApp,
+  Superhero,
+  ToDoList
 } from "../assets";
 
 export const Socials = [
@@ -84,57 +81,39 @@ export const Menus = [
 
 export const ProjectsData = [
   {
-    id: `food-${Date.now()}`,
-    name: "Single Food Restaurant",
-    imgSrc: RestaurantClone,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
-    id: `codepen-${Date.now()}`,
-    name: "CodePen Clone",
-    imgSrc: CodePenClone,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
-    id: `openai-${Date.now()}`,
-    name: "OpenAI",
-    imgSrc: OpenAI,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
     id: `chatapp-${Date.now()}`,
-    name: "Chat App Build",
+    name: "Quick Chat App",
     imgSrc: ChatApp,
-    gitURL: "https://github.com/Vetrivel-VP",
+    gitURL: "https://github.com/dollyaggarwal/ChatApp",
   },
   {
-    id: `imageSharing-${Date.now()}`,
-    name: "Image Sharing App",
-    imgSrc: ImageSharing,
-    gitURL: "https://github.com/Vetrivel-VP",
+    id: `job-${Date.now()}`,
+    name: "JobGram Portal",
+    imgSrc: JobPortal,
+    gitURL: "https://github.com/dollyaggarwal/Job-Portal-App",
   },
   {
-    id: `pixabayclone-${Date.now()}`,
-    name: "Pixabay Clone 2.0",
-    imgSrc: PixabayClone,
-    gitURL: "https://github.com/Vetrivel-VP",
+    id: `portfolio-${Date.now()}`,
+    name: "My Portfolio",
+    imgSrc: Portfolio,
+    gitURL: "https://github.com/dollyaggarwal",
   },
   {
-    id: `freshjuiceui-${Date.now()}`,
-    name: "Fresh Juice UI Build",
-    imgSrc: FreshJuiceUI,
-    gitURL: "https://github.com/Vetrivel-VP",
+    id: `mealsapp-${Date.now()}`,
+    name: "Meals App",
+    imgSrc: MealsApp,
+    gitURL: "https://github.com/dollyaggarwal/MealsApp",
   },
   {
-    id: `socialmedia-${Date.now()}`,
-    name: "Social Media App",
-    imgSrc: SocialMedia,
-    gitURL: "https://github.com/Vetrivel-VP",
+    id: `superhero-${Date.now()}`,
+    name: "Search Superhero",
+    imgSrc: Superhero,
+    gitURL: "https://github.com/dollyaggarwal/SuperHeroSearchApp",
   },
   {
-    id: `portfoliofirebase-${Date.now()}`,
-    name: "Portfolio UI Fireabse",
-    imgSrc: PortfolioFirebase,
-    gitURL: "https://github.com/Vetrivel-VP",
+    id: `todo-${Date.now()}`,
+    name: "To DO List App",
+    imgSrc: ToDoList,
+    gitURL: "https://github.com/dollyaggarwal/TODOLIST",
   },
 ];
