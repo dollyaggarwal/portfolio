@@ -13,6 +13,11 @@ const Contact = () => {
 		email:"",
 		message:"",
 	});
+	const [alert, setAlert] = useState({
+		isAlert: false,
+		message:"",
+		status:null,
+	});
 
 	const handleTextChange = (e) =>{
 		const {name,value} = e.target
@@ -23,11 +28,24 @@ const Contact = () => {
 
 	const sendMessage = async () =>{
 		if(data.email === "" || data.email === null){
+			setAlert({isAlert : true, message : "Required fields cannot be empty", status : "warning",});
+			setInterval(() =>{
+				setAlert({isAlert : false, message : "", status : null,});
+			},4000)
 
 		}else{
 		await addDoc(collection(db, "messages"), {...data}).then(() =>{
+			setData({ firstName:"", lastName:"", email:"", message:"" })
+			setAlert({isAlert : true, message : "Thanks for contacting me", status : "success",});
+			setInterval(() =>{
+				setAlert({isAlert : false, message : "", status : null,});
+			},4000)
 
 		}).catch(err =>{
+			setAlert({isAlert : true, message : `Error : ${err.message}`, status : "danger",});
+			setInterval(() =>{
+				setAlert({isAlert : false, message : "", status : null,});
+			},4000)
 
 		})
 		}
@@ -38,7 +56,11 @@ const Contact = () => {
 			className='flex items-center justify-center flex-col gap-12 my-12'>
 
 			{/* Toast Alert Notification */}
-			<Alert 	status={"success"} message={"Thanks for contacting me"}/>
+			<AnimatePresence>
+				{alert.isAlert && (
+					<Alert status={alert.status} message={alert.message}/>
+				)}
+			</AnimatePresence>
 			{/* title */}
 			<div className='w-full flex items-center justify-center py-24'>
 				<motion.div
