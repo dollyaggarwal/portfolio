@@ -10,6 +10,7 @@ import { AnimatePresence } from 'framer-motion';
 import HomeSocialLinks from '../components/HomeSocialLinks';
 import { Socials } from '../utils/helper';
 import ParticlesContainer from './ParticlesContainer';
+import { Resume } from '../assets';
 
 const App = () => {
 	return (
@@ -59,7 +60,7 @@ const App = () => {
 						</p>
 						<p className='text-texlight text-center'>+91 80763-51049</p>
 						<a
-							href='/assets/CV(full stack).pdf'
+							href={Resume}
 							target='_blank'
 							rel='noopener noreferrer'>
 							<p className='text-primary text-center'>Hire Me</p>

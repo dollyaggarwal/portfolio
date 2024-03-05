@@ -1,6 +1,6 @@
 import React from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Hero } from '../assets';
+import { Hero, Resume } from '../assets';
 import HeroTypeWritter from '../components/HeroTypeWritter';
 import HomeSocialLinks from '../components/HomeSocialLinks';
 import { Socials } from '../utils/helper';
@@ -46,7 +46,7 @@ const Home = () => {
 
 					{/* hire me button */}
 					<a
-					href='/assets/CV(full stack).pdf'
+					href={Resume}
 						target='_blank' 
 						rel='noopener noreferrer'
 						style={{ boxShadow: 'inset 0px 0px 10px rgba(255,255,255,0.3)' }}
